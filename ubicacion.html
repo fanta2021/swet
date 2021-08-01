@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Choco</title>
+  <link rel="stylesheet" href="/CSS/styles.css">
+  <link rel="stylesheet" href="/CSS/styles2.css">
+  <link rel="stylesheet" href="/CSS/styles3.css">
+  <link rel="stylesheet" href="/CSS/styles4.css">
+</head>
+<body>
+  <section>
+    <header>
+      <nav>
+        <button class="nav-boton" onclick="accion()">Menú</button>
+        <a class="nav-menu desaparece" href="/Index.html" >Inicio</a>
+            <a class="nav-menu desaparece" href="/Galletas.html" >Galletas</a>
+            <a class="nav-menu desaparece " href="/Alfajores.html" >Alfajores</a>
+            <a class="nav-menu desaparece" href="/Tortas.html" >Tortas</a></li>
+            <a class="nav-menu desaparece" href="/Contacto.html" >Contacto</a></li>
+            <a class="nav-menu desaparece" href="/ubicacion.html" >Ubicación</a></li>
+            <a class="nav-menu desaparece" href="https://www.google.com" target="_blank" >Ir a Google</a>
+      </nav>
+      <h1 class="texto_decorado" style="text-align:center;font-size:300%; " >Sweet Choco By Azanza</h1>
+    </header>
+  </section>
+  <br>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.942047384747!2d-56.212728185132235!3d-34.832549580400816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a1d4d63e1f505b%3A0x82d7cfc256214b1d!2sBell%201169%2C%2012400%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1626974800061!5m2!1ses-419!2suy" width="100%" height="450" style="border: 3px solid black;" allowfullscreen="" loading="lazy"></iframe></body>
+  <br><br> 
+  <footer>
+    <div> 
+      <h2 style= "color: white; background-color: rgb(92,46,14); text-align: center; margin-top: 0;">Contacto</h2>
+    
+    <div style="width:33.33%; float: left;  text-align: center "> 
+      <p style="background-color: white;"> <b> Teléfono 093831405 </b></p>
+    </div>
+    <div style="width: 33.33%; display: inline-block; text-align: center;">
+    <p style="background-color: white;"><b><a href="malito:luisazanza@hotmail.com"> Email Luisazanza@hotmail.com</a></b></p>
+    </div>
+    <div style="width: 33.33%;text-align: center; float:right; text-align: center">
+    <p style="background-color: white;"><b> Dirección Bell 1169 Esquina Propios </b></p>
+  </div>
+    </div>
+  </footer>
+  <script>
+    function accion(){
+      var ancla= document.getElementsByClassName('nav-menu')
+      for(var i = 0; i <ancla.length; i++){
+        ancla[i].classList.toggle('desaparece');
+      }
+    }
+  </script>
+</body>
+  </html>

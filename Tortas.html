@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Choco</title>
+  <link rel="stylesheet" href="/CSS/styles.css">
+  <link rel="stylesheet" href="/CSS/styles2.css">
+  <link rel="stylesheet" href="/CSS/styles3.css">
+  <link rel="stylesheet" href="/CSS/styles4.css">
+   
+</head>
+<body>
+  <section>
+    <header>
+      <nav>
+        <button class="nav-boton" onclick="accion()">Menú</button>
+        <a class="nav-menu desaparece" href="/Index.html" >Inicio</a>
+            <a class="nav-menu desaparece" href="/Galletas.html" >Galletas</a>
+            <a class="nav-menu desaparece " href="/Alfajores.html" >Alfajores</a>
+            <a class="nav-menu desaparece" href="/Tortas.html" >Tortas</a></li>
+            <a class="nav-menu desaparece" href="/Contacto.html" >Contacto</a></li>
+            <a class="nav-menu desaparece" href="/ubicacion.html" >Ubicación</a></li>
+            <a class="nav-menu desaparece" href="https://www.google.com" target="_blank" >Ir a Google</a>
+      </nav>
+      <h1 class="texto_decorado" style="text-align:center;font-size:300%; " >Sweet Choco By Azanza</h1>
+    </header>
+  </section> 
+<br>
+<table>
+  <caption class="texto_decorado" style="font-size: 30px; background-color: rgb(92,46,14); color: white;"><b>Nuestros Productos</b></caption>
+  <tr>
+    <th>Nombre</th>
+    <th>Precio</th>
+    <th>Imagen</th>
+    <th>Nombre</th>
+    <th>Precio</th>
+    <th>Imagen</th>
+  </tr>
+  <tr>
+    <td>Torta Alfajor</td>
+    <td>$U2500</td>
+    <td><a href="/Torta_alfajor.html"><img  class="img" src="/Imagenes/torta_alfajor.jpg" alt="Torta Alfajor" ></a></td>
+    <td>Cheese Cake</td>
+    <td>$U2000</td>
+    <td><a href="/Cheese_cake.html"><img class="img" src="/Imagenes/cheesecake.jpg" alt="Cheesecake" ></a></td>
+  </tr>
+  <tr>
+    <td>Lemon Pie</td>
+    <td>$U1800</td>
+    <td><a href="/Lemon_pie.html"><img class="img" src="/Imagenes/lemonpie.png" alt="Lemon Pie" ></a></td>
+    <td>Torta Oreo</td>
+    <td>$U3000</td>
+    <td><a href="/Torta_oreo.html"><img class="img" src="/Imagenes/oreo.jpg" alt="Torta Oreo"></a></td>
+    </tr>
+</table>
+<br>
+  <section>
+   <footer>
+     <div>
+      <h2 style= "color: white; background-color: rgb(92,46,14); text-align: center; margin-top: 0;">Contacto</h2>
+      <div style="width:33.33%; float: left;  text-align: center ">
+        <p style="background-color: white;"> <b> Teléfono 093831405 </b></p>
+      </div>
+      <div style="width: 33.33%; display: inline-block; text-align: center;">
+        <p style="background-color: white;"><b><a href="malito:luisazanza@hotmail.com"> Email Luisazanza@hotmail.com</a></b></p>
+      </div>
+      <div style="width: 33.33%;text-align: center; float:right; text-align: center">
+        <p style="background-color: white;"><b> Dirección Bell 1169 Esquina Propios </b></p>
+      </div>
+    </div>
+    </footer>
+  </section>
+  <script>
+    function accion(){
+      var ancla= document.getElementsByClassName('nav-menu')
+      for(var i = 0; i <ancla.length; i++){
+        ancla[i].classList.toggle('desaparece');
+      }
+    }
+  </script>
+</body>
+</html>

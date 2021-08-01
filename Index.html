@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Choco</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/styles2.css">
+    <link rel="stylesheet" href="/CSS/styles3.css">
+    <link rel="stylesheet" href="/CSS/styles4.css">
+   
+</head>
+<body>
+ 
+  <section>
+    <header>
+      <nav class="aparece">
+        <button class="nav-boton" onclick="accion()">Menú</button>
+            <a class="nav-menu desaparece" href="/Galletas.html" >Galletas</a>
+            <a class="nav-menu desaparece " href="/Alfajores.html" >Alfajores</a>
+            <a class="nav-menu desaparece" href="/Tortas.html" >Tortas</a></li>
+            <a class="nav-menu desaparece" href="/Contacto.html" >Contacto</a></li>
+            <a class="nav-menu desaparece" href="/ubicacion.html" >Ubicación</a></li>
+            <a class="nav-menu desaparece" href="https://www.google.com" target="_blank" >Ir a Google</a>
+      </nav>
+      <h1 class="texto_decorado animacion" style="text-align:center;font-size:300%; " >Sweet Choco By Azanza</h1>
+    </header>
+  </section>
+
+
+<br>
+<br>
+<h1 style="text-align: center; color: rgb(248, 246, 246); background-color: rgb(92,46,14);">Sobre nosotros</h1>
+<div style=" margin: auto;">
+  <p style="text-align: center; font-size: 200%;" class="texto_decorado" ><b> <br> Somos una empresa familiar que 
+    desde el primer día de operaciones, le ha ofrecido al publico la mas amplia selección de productos a precios 
+    incomparables. Nuestra tienda virtual es sinónimo de calidad ya que usamos las mejores materias primas para 
+    lograr un producto a la altura de sus expectativas, en Sweet Choco by Azanza te garantizamos que van a 
+    contar con la mayor variedad de productos y no te vas a cansar de probarlos. 🤗🤤😏</b> </p>
+  </div>
+  <br><br>
+  <section>
+    <div >
+      <h1 style= "color: white; background-color: rgb(92,46,14); text-align: center; margin-top: 0;">Hacemos envios</h1>
+      <img class="delivery" src="/Imagenes/delivery-14.jpg" style="width: 10%;" alt="">
+    </div>
+    <footer>
+      <div>
+        <h2 style= "color: white; background-color: rgb(92,46,14); text-align: center; margin-top: 0;">Contacto</h2>
+        <div style="width:33.33%; float: left;  text-align: center ">
+          <p style="background-color: white;"> <b> Teléfono 093831405 </b></p>
+        </div>
+        <div style="width: 33.33%; display: inline-block; text-align: center;">
+          <p style="background-color: white;"><b><a href="malito:luisazanza@hotmail.com"> Email Luisazanza@hotmail.com</a></b></p>
+        </div>
+        <div style="width: 33.33%;text-align: center; float:right; text-align: center">
+          <p style="background-color: white;"><b> Dirección Bell 1169 Esquina Propios </b></p>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <script>
+    function accion(){
+      var ancla= document.getElementsByClassName('nav-menu')
+      for(var i = 0; i <ancla.length; i++){
+        ancla[i].classList.toggle('desaparece');
+      }
+    }
+  </script>
+</body>
+</html>

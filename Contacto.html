@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Choco</title>
+  <link rel="stylesheet" href="/CSS/styles.css">
+  <link rel="stylesheet" href="/CSS/styles2.css">
+  <link rel="stylesheet" href="/CSS/styles3.css">
+  <link rel="stylesheet" href="/CSS/styles4.css">
+    
+</head>
+<body>
+  <section>
+    <header>
+      <nav>
+        <button class="nav-boton" onclick="accion()">Menú</button>
+        <a class="nav-menu desaparece" href="/Index.html" >Inicio</a>
+            <a class="nav-menu desaparece" href="/Galletas.html" >Galletas</a>
+            <a class="nav-menu desaparece " href="/Alfajores.html" >Alfajores</a>
+            <a class="nav-menu desaparece" href="/Tortas.html" >Tortas</a></li>
+            <a class="nav-menu desaparece" href="/Contacto.html" >Contacto</a></li>
+            <a class="nav-menu desaparece" href="/ubicacion.html" >Ubicación</a></li>
+            <a class="nav-menu desaparece" href="https://www.google.com" target="_blank" >Ir a Google</a>
+      </nav>
+      <h1 class="texto_decorado" style="text-align:center;font-size:300%; " >Sweet Choco By Azanza</h1>
+    </header>
+  </section>
+  <br>
+  <h2 style="background-color: rgb(92,46,14);color: white;  text-align:center ">Contacto</h2>
+  <br>
+  <div>
+    <div style="width: 400px;height: 300px; text-align: center; float: left; ">
+      <h2 style="text-align: left;">Información</h2>
+      <br>
+      <p style="text-align:left" ><b>Se realizan envíos a todo el país. Dentro de Montevideo, por cadetería. También se 
+      puede retirar en nuestro domicilio.<br> Por consultas y pedidos, pueden contactarnos por los siguientes medios:
+      <br><br>Hacemos envíos consultar costos<img src="/Imagenes/delivery-14.jpg" style="width: 50%;" style="margin-left: 0;"></b></p>
+    </div>
+    <div style="width: 400px;height: 500px; display: inline-block; margin-left: 10%;" >
+      <h2 style="text-align: left;">Horarios</h2><br>
+      <p style="text-align: left;"><b>Lunes — Viernes: 9:00 – 18:00</b></p>
+      <br>
+      <p style="text-align: left;"><b>Sábados: 9:00 – 13:00 </b></p>
+      <br>
+      <p style="text-align: left;"><b> Domingos: Cerrado </b></p>
+      <br>
+    </div>
+    <div style="width: 400px;height: 500px; float: right;" >
+      <h2 style="text-align: left;">Contáctanos</h2>
+      <form style="text-align:left; margin-left: 20px;">
+        <label>Nombre</label>
+        <input type="text" name="nombre">
+        <br>
+        <br>
+        <label>Email</label>
+        <input  style="margin-left: 15px;" type="text" name="email">
+        <br>
+        <br>
+        <label>Teléfono</label>
+        <input type="number" name="telefono">
+        <br>
+        <br>
+        <label>Mensaje</label>
+        <br>
+        <br>
+        <textarea style="width: 340px; height: 200px; margin-left: 20px;" ></textarea>
+        <br>
+        <br>
+        <input type="submit" style="margin-left: 20px; background-color: rgb(92,46,14);color: white; border-radius: 20%; font-size: 20px;">
+      </form>
+    </div>
+  </div>
+  <br>
+  <br>
+  <section>
+    <footer>
+      <div>
+        <h2 style= "color: white; background-color: rgb(92,46,14); text-align: center; margin-top: 0;">Contacto</h2>
+        <div style="width:33.33%; float: left;  text-align: center ">
+          <p style="background-color: white;"> <b> Teléfono 093831405 </b></p>
+        </div>
+        <div style="width: 33.33%; float: left; text-align: center;">
+          <p style="background-color: white;"><b><a href="malito:luisazanza@hotmail.com"> Email Luisazanza@hotmail.com</a></b></p>
+        </div>
+        <div style="width: 33.33%;text-align: center; float:left">
+          <p style="background-color: white;"><b> Dirección Bell 1169 Esquina Propios </b></p>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <script>
+    function accion(){
+      var ancla= document.getElementsByClassName('nav-menu')
+      for(var i = 0; i <ancla.length; i++){
+        ancla[i].classList.toggle('desaparece');
+      }
+    }
+  </script>
+</body>
+</html>
